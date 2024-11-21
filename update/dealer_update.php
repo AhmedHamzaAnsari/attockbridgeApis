@@ -36,7 +36,7 @@ if (!empty($_POST)) {
     } else {
         $banner = rand(1000, 100000) . "-" . $_FILES['banner_img']['name'];
         $file_loc = $_FILES['banner_img']['tmp_name'];
-        $folder = "../../hascolBridge_files/uploads/";
+        $folder = "../../attockbridge_files/uploads/";
         if (move_uploaded_file($file_loc, $folder . $banner)) {
             // Successfully uploaded banner
         } else {
@@ -52,7 +52,7 @@ if (!empty($_POST)) {
     } else {
         $logo = rand(1000, 100000) . "-" . $_FILES['logo_img']['name'];
         $file_loc1 = $_FILES['logo_img']['tmp_name'];
-        $folder1 = "../../hascolBridge_files/uploads/";
+        $folder1 = "../../attockbridge_files/uploads/";
         if (move_uploaded_file($file_loc1, $folder1 . $logo)) {
             // Successfully uploaded logo
         } else {

@@ -1,7 +1,7 @@
 <?php
 	ini_set('max_execution_time', -1);
 	$username="root";
-	$password="Ptoptrack@(!!@";
+	$password="";
 	$database="hascolbridge";
 	$connection=mysqli_connect('localhost', $username, $password,$database);
 	if (!$connection)

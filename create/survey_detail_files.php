@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if ($file_size <= 134217728) { // 128 MB in bytes
                 $new_file_name = rand(1000, 100000) . "-" . $file_name;
                 $file_loc = $_FILES['files']['tmp_name'];
-                $upload_dir = "../../hascolBridge_files/uploads/";
+                $upload_dir = "../../attockbridge_files/uploads/";
                 $file_path = $upload_dir . $new_file_name;
 
                 // Move the uploaded file to the destination folder

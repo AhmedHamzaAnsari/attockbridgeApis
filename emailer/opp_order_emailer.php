@@ -125,7 +125,7 @@ if ($count_App_order > 0) {
 function smtp_mailer($tm_email, $time, $dealers_name, $tm_name, $msg_subject, $msg_body)
 {
     // Establish PDO connection for logging (consider logging in a separate function)
-    $connect = new PDO("mysql:host=localhost;dbname=hascolbridge", "root", "Ptoptrack@(!!@");
+    $connect = new PDO("mysql:host=localhost;dbname=attockbridge", "root", "");
 
     // Initialize PHPMailer
     $mail = new PHPMailer();

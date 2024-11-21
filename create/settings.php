@@ -11,7 +11,7 @@ if (isset($_POST)) {
     $file_loc = $_FILES['logo']['tmp_name'];
     $file_size = $_FILES['logo']['size'];
     //  $file_type = $_FILES['file']['type'];
-    $folder = "../../hascolBridge_files/uploads/";
+    $folder = "../../attockbridge_files/uploads/";
     move_uploaded_file($file_loc, $folder . $file);
 
     $tdate = date('Y-m-d H:i:s');

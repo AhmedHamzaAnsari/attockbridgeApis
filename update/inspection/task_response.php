@@ -14,7 +14,7 @@ if (isset($_POST)) {
     $file_loc1 = $_FILES['dealer_sign']['tmp_name'];
     $file_size1 = $_FILES['dealer_sign']['size'];
     //  $file_type = $_FILES['file']['type'];
-    $folder1 = "../../../hascolBridge_files/uploads/";
+    $folder1 = "../../../attockbridge_files/uploads/";
     move_uploaded_file($file_loc1, $folder1 . $file1);
 
 

@@ -35,7 +35,7 @@ echo smtp_mailer('ahmedhamzaansari.99@gmail.com', date('Y-m-d H:i:s'), 'Test', '
 function smtp_mailer($tm_email, $time, $dealers_name, $tm_name, $msg_subject, $msg_body)
 {
     // Establish PDO connection for logging (consider logging in a separate function)
-    $connect = new PDO("mysql:host=localhost;dbname=hascolbridge", "root", "Ptoptrack@(!!@");
+    $connect = new PDO("mysql:host=localhost;dbname=attockbridge", "root", "");
 
     // Initialize PHPMailer
     $mail = new PHPMailer();

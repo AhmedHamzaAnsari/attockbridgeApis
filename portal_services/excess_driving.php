@@ -5,7 +5,7 @@ header("Access-Control-Allow-Headers: *");
 ini_set('max_execution_time', -1);
 date_default_timezone_set("Asia/Karachi");
 // $username = "root";
-// $password = "Ptoptrack@(!!@";
+// $password = "";
 // $database = "hascolbridge";
 // $db = mysqli_connect('localhost', $username, $password, $database);
 define('DB_SERVER', 'localhost');

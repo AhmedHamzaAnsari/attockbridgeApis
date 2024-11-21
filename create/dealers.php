@@ -28,14 +28,14 @@ if (isset($_POST)) {
     $file_loc = $_FILES['banner_img']['tmp_name'];
     $file_size = $_FILES['banner_img']['size'];
     //  $file_type = $_FILES['file']['type'];
-    $folder = "../../hascolBridge_files/uploads/";
+    $folder = "../../attockbridge_files/uploads/";
     move_uploaded_file($file_loc, $folder . $file);
 
     $file1 = rand(1000, 100000) . "-" . $_FILES['logo_img']['name'];
     $file_loc1 = $_FILES['logo_img']['tmp_name'];
     $file_size1 = $_FILES['logo_img']['size'];
     //  $file_type = $_FILES['file']['type'];
-    $folder1 = "../../hascolBridge_files/uploads/";
+    $folder1 = "../../attockbridge_files/uploads/";
     move_uploaded_file($file_loc1, $folder1 . $file1);
 
     $tdate = date('Y-m-d H:i:s');

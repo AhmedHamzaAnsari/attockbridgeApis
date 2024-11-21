@@ -20,7 +20,7 @@ $time = date('Y-m-d H:i:s');
 
 $message = '';
 
-$connect = new PDO("mysql:host=localhost;dbname=hascolbridge", "root", "Ptoptrack@(!!@");
+$connect = new PDO("mysql:host=localhost;dbname=attockbridge", "root", "");
 
 
 // $dealers_id = $_GET['dealers_id'];
@@ -58,7 +58,7 @@ if ($count_eng > 0) {
 
 function smtp_mailer($tm_email, $time, $dealers_name, $tm_name)
 {
-    $connect = new PDO("mysql:host=localhost;dbname=hascolbridge", "root", "Ptoptrack@(!!@");
+    $connect = new PDO("mysql:host=localhost;dbname=attockbridge", "root", "");
 
     // $file_name = md5(rand()) . '.pdf';
     

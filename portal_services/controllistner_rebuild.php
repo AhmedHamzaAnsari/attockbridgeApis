@@ -2,7 +2,7 @@
 ini_set('max_execution_time', -1);
 date_default_timezone_set("Asia/Karachi");
 $username = "root";
-$password = "Ptoptrack@(!!@";
+$password = "";
 $database = 'attockbridge';
 $connection = mysqli_connect('localhost', $username, $password, $database);
 if (!$connection) {

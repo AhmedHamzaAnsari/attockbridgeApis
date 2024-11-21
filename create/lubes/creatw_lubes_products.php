@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (in_array($file_ext, $allowed_extensions)) {
             $file = rand(1000, 100000) . "-" . $file_name;
             $file_loc = $_FILES['product_image']['tmp_name'];
-            $folder = "../../../hascolBridge_files/uploads/";
+            $folder = "../../../attockbridge_files/uploads/";
 
             // Move the file to the upload folder
             if (move_uploaded_file($file_loc, $folder . $file)) {

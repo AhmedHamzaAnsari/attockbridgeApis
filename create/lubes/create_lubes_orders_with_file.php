@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $file_loc = $_FILES['invoice_img']['tmp_name'];
     $file_size = $_FILES['invoice_img']['size'];
     //  $file_type = $_FILES['file']['type'];
-    $folder = "../../../hascolBridge_files/uploads/";
+    $folder = "../../../attockbridge_files/uploads/";
     move_uploaded_file($file_loc, $folder . $file);
 
     $datetime = date('Y-m-d H:i:s');

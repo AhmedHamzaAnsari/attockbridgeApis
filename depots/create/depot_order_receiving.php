@@ -33,7 +33,7 @@ if (isset($_POST)) {
             // File upload handling
             $file = rand(1000, 100000) . "-" . $_FILES['rec_file']['name'][$i];
             $file_loc = $_FILES['rec_file']['tmp_name'][$i];
-            $folder = "../../../hascolBridge_files/uploads/";
+            $folder = "../../../attockbridge_files/uploads/";
             move_uploaded_file($file_loc, $folder . $file);
 
             if ($product_qty[$i] > 0) {

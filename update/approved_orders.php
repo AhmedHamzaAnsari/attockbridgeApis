@@ -8,7 +8,7 @@ if (isset($_POST)) {
 
         curl_setopt_array($curl, [
             CURLOPT_PORT => "8080",
-            CURLOPT_URL => "http://151.106.17.246:8080/hascolbridgeApis/emailer/opp_order_emailer.php?order_id=" . $order_id,
+            CURLOPT_URL => "../emailer/opp_order_emailer.php?order_id=" . $order_id,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
@@ -39,7 +39,7 @@ if (isset($_POST)) {
 
         curl_setopt_array($curl, [
             CURLOPT_PORT => "8080",
-            CURLOPT_URL => "http://151.106.17.246:8080/hascolbridgeApis/emailer/push_order_emailer.php?order_id=" . $order_id,
+            CURLOPT_URL => "../emailer/push_order_emailer.php?order_id=" . $order_id,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,
